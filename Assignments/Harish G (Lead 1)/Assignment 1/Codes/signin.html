@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  7 21:07:09 2022
+
+@author: Kavin
+"""
+
+{% extends 'base.html' %}
+{% block head %}
+<title>Signin Page</title>
+{% endblock %}
+{% block body %}
+<h1>Signin Page</h1>
+<form action="/Signin" method="POST">
+<label>Email</label><br>
+<input type="email" name="email"><br><br>
+<label>password</label><br>
+<input type="password" name="name"><br><br>
+<input type="submit" class="btn btn-primary">
+</form>
+{% endblock %}
