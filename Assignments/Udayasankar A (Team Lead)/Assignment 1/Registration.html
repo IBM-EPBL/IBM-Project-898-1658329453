@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="http://localhost:5000/login" method="post">
+    <div class="container">
+        <h1> Registration Form </h1>
+        <form name="Registration" class="Registartion-form" onsubmit="return formValidation()">
+          <table>
+            <tr>
+              <td><label for="name">Name :</label></td>
+              <td><input type="text" name="nm" id="name" placeholder="Your Name"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email :</label></td>
+              <td><input type="text" name="email" id="email" placeholder="Your Email"></td>
+            </tr>
+            <tr>
+              <td><label for="password">Password :</label></td>
+              <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+              <td><label for="phoneNumber">Phone Number :</label></td>
+              <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender :</label></td>
+              <td> <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other </td>
+            </tr>
+            <tr>
+              <td><label for="language">language :</label></td>
+              <td>
+                <select name="language" id="language">
+                  <option value="">Select Language</option>
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="French">French</option>
+                  <option value="Russian">Russian</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="Pincode">PinCode :</label></td>
+              <td><input type="number" name="Pincode" id="Pincode"></td>
+            </tr>
+            <tr> 
+              <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+            </tr>
+          </table>
+        </form>
+</body>
+</html>
